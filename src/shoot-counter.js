@@ -9,15 +9,14 @@ const app = new Framework7({
 	root: '#app',
 	name: 'Shoot-Counter',
 	id: 'shoot-counter.kna-st.de',
-	 panel: {
-    swipe: 'left',
-  },
 	routes: [{
-		path: '/about/',
-		url: 'about.html',
-	}],
+		path: '/home/',
+		url: './index.html'
+	}, {
+		path: '/details/',
+		url: './details.html'
+	}]
 });
-const mainView = app.views.create('.view-main');
 
 window.addEventListener('load', (event) => {
 	let sum = 0;
