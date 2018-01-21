@@ -1,4 +1,4 @@
-div.content {
+div.page-content {
 	display: flex;
 	flex-direction: column;
 }
@@ -30,6 +30,6 @@ div.matrix div span:first-child {
 	margin: 0;
 }
 
-div.matrix div span button {
+div.matrix div span button.button.button-fill {
 	height: 100%;
 }

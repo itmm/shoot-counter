@@ -1,10 +1,23 @@
 "use strict";
 
 // loading assets
-
-require("../node_modules/ratchet-npm/dist/js/ratchet.js");
-require("../node_modules/ratchet-npm/dist/css/ratchet.css");
+import Framework7 from 'framework7';
 require("./shoot-counter.css");
+require("../node_modules/framework7/dist/css/framework7.css");
+
+const app = new Framework7({
+	root: '#app',
+	name: 'Shoot-Counter',
+	id: 'shoot-counter.kna-st.de',
+	 panel: {
+    swipe: 'left',
+  },
+	routes: [{
+		path: '/about/',
+		url: 'about.html',
+	}],
+});
+const mainView = app.views.create('.view-main');
 
 window.addEventListener('load', (event) => {
 	let sum = 0;
