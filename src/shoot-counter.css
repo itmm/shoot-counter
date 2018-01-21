@@ -1,0 +1,35 @@
+div.content {
+	display: flex;
+	flex-direction: column;
+}
+
+div.matrix {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+div.matrix div {
+	display: flex;
+	flex-direction: row;
+	flex-grow: 1;
+	margin: 10pt 0 0 0;
+}
+
+div.matrix div:first-child {
+	margin: 0;
+}
+
+div.matrix div span {
+	flex-grow: 1;
+	width: 40pt;
+	margin: 0 0 0 10pt;
+}
+
+div.matrix div span:first-child {
+	margin: 0;
+}
+
+div.matrix div span button {
+	height: 100%;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Shoot-Coutner</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+		<script src="shoot-counter.js"></script>
+	</head>
+	<body>
+		<header class="bar bar-nav"><h1 class="title">Shoot-Counter</h1></header>
+		<div class="content">
+			<div class="card">
+				<ul class="table-view">
+					<li class="table-view-cell">
+						<a
+							class="navigate-right"
+	   						id="main-sum"
+							href="./two.html"
+							data-ignore="push"
+							data-transition="slide-in"
+						>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="matrix content-padded">
+				<div>
+					<span><button class="btn btn-block">7</button></span>
+					<span><button class="btn btn-block">8</button></span>
+					<span><button class="btn btn-block">9</button></span>
+				</div>
+				<div>
+					<span><button class="btn btn-block">4</button></span>
+					<span><button class="btn btn-block">5</button></span>
+					<span><button class="btn btn-block">6</button></span>
+				</div>
+				<div>
+					<span><button class="btn btn-block">1</button></span>
+					<span><button class="btn btn-block">2</button></span>
+					<span><button class="btn btn-block">3</button></span>
+				</div>
+				<div>
+					<span><button id="main-undo" class="btn btn-block btn-negative">Rückgängig</button></span>
+					<span><button class="btn btn-block">0</button></span>
+					<span><button class="btn btn-block btn-positive">10</button></span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
